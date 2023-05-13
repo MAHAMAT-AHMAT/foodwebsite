@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete responsive Food / Restaurant Website Design Tutorial</title>
+
+    <!-- fond awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <section class="header">
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>Koykissir.</a>
+      <nav class="navbar">
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos de</a>
+        <a href="#food">Nourriture</a>
+        <a href="#gallery">gallery</a>
+        <a href="#menu">menu</a>
+        <a href="#order">order</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>nourriture exceptionnelle</span>
+              <h3>délicieuse cuisine</h3>
+              <a href="#food" class="btn">commencer</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>nourriture exceptionnelle</span>
+              <h3>moment matinal</h3>
+              <a href="#blogs" class="btn">commencer</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>nourriture exceptionnelle</span>
+              <h3>cuisine authentique</h3>
+              <a href="#gallery" class="btn">commencer</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- la fin de la page d'accueil-->
+
+    <!-- abouts sections starts(A propos de) -->
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images/about-img.png" alt="" />
+      </div>
+      <div class="content">
+        <h3 class="title">Bienvenue dans notre restaurant</h3>
+        <p>
+          Koykissir est un Restaurant avec la cuisine nationale et européenne et
+          des cocktails classiques, dans une ambiance chaleureuse, font de cette
+          expérience gastronomique réconfortante.
+        </p>
+        <a href="#about" class="btn">en savoir plus</a>
+        <div class="icons-container">
+          <div class="icons">
+            <img src="images/about-icon-1.png" alt="" />
+            <h3>Alimentation de qualité</h3>
+          </div>
+          <div class="icons">
+            <img src="images/about-icon-2.png" alt="" />
+            <h3>Nourriture et boissons</h3>
+          </div>
+          <div class="icons">
+            <img src="images/about-icon-3.png" alt="" />
+            <h3>Chefs experts</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- abouts sections ends( Fin de la partie A propos de) -->
+    <!-- food section starts( la partie nourriture) -->
+
+    <section class="food" id="food">
+      <div class="heading">
+        <span>Les Plats populaires</span>
+        <h3>Nos délicieux plats</h3>
+      </div>
+      <div class="swiper food-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide" data-name="food-1">
+            <img src="images/food-img-1.png" alt="" />
+            <h3>La Classic Caesar</h3>
+            <div class="price">10.85$</div>
+          </div>
+
+          <div class="swiper-slide slide" data-name="food-2">
+            <img src="images/food-img-2.png" alt="" />
+            <h3>Tchadian Mozza Et Pasta</h3>
+            <div class="price">15$</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-3">
+            <img src="images/food-img-3.png" alt="" />
+            <h3>Tasty rouge Cheese & chicken</h3>
+            <div class="price">9.99$</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-4">
+            <img src="images/food-img-4.png" alt="" />
+            <h3>La Salade Manhattan</h3>
+            <div class="price">8.99$</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-5">
+            <img src="images/food-img-5.png" alt="" />
+            <h3>Le Menu Best Of</h3>
+            <div class="price">7.50$</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- food section ends( La fin de la parie Nourriture) -->
+
+    <!-- food preview section starts (La previsualisation du produit) -->
+    <section class="food-preview-container">
+      <div id="close-preview" class="fas fa-times"></div>
+      <div class="food-preview" data-target="food-1">
+        <img src="images/food-img-1.png" alt="" />
+        <h3>La Classic Caesar</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Découvrez la Classic Caesar, découpée et préparée chaque jour sur
+          place. La Classic Caesar est composée d'émincés de filet de poulet
+          mariné et rôti* origine France, de Grana Padano AOP et de croûtons
+          croustillants.
+        </p>
+        <div class="price">10.85$</div>
+        <a href="#" class="btn">commander</a>
+      </div>
+
+      <div class="food-preview" data-target="food-2">
+        <img src="images/food-img-2.png" alt="" />
+        <h3>Tchadian Mozza Et Pasta</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Découvrez Tchadian Mozza & Pasta, découpée et préparée chaque jour sur
+          place. Tchadian Mozza & Pasta, une recette végétarienne composée d'une
+          mozzarella au lait de bufflonne, de pâtes radiatori et de tomates
+          assaisonnées
+        </p>
+        <div class="price">15$</div>
+        <a href="#" class="btn">commander</a>
+      </div>
+
+      <div class="food-preview" data-target="food-3">
+        <img src="images/food-img-3.png" alt="" />
+        <h3>Tasty rouge Cheese & chicken</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Découvrez la Tasty rouge Cheese & chicken, une recette gourmande,
+          préparée et découpée chaque jour sur place.
+        </p>
+        <div class="price">9.99$</div>
+        <a href="#" class="btn">commander</a>
+      </div>
+      <div class="food-preview" data-target="food-4">
+        <img src="images/food-img-4.png" alt="" />
+        <h3>La Salade Manhattan</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Sandwich, accompagnement, boisson… La Salade Manhattan est la solution
+          pour déguster un repas chez Koykissir et passer un excellent moment.
+        </p>
+        <div class="price">8.99$</div>
+        <a href="#" class="btn">commander</a>
+      </div>
+      <div class="food-preview" data-target="food-5">
+        <img src="images/food-img-5.png" alt="" />
+        <h3>Le Menu Best Of</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Un Menu Best, un accompagnement et une boisson. Véritable icône de
+          Koykissir, le Menu Best Of est le menu phare de l’enseigne. Avec sa
+          formule pratique et la grande variété de choix qu’il propose, le Menu
+          Best Of Koykissir se destine à offrir un repas complet à ses
+          consommateurs.
+        </p>
+        <div class="price">7.50$</div>
+        <a href="#" class="btn">commander</a>
+      </div>
+    </section>
+    <!-- food preview section ends(la fin de la parti d'aperçu du produit) -->
+
+    <!-- Gallery section starts (La section gallery) -->
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span>Notre Galerie</span>
+        <h3>Nos histoires d'Untol</h3>
+      </div>
+      <div class="gallery-container">
+        <a href="images/food-galler-img-1.jpg" class="box">
+          <img src="images/food-galler-img-1.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-2.jpg" class="box">
+          <img src="images/food-galler-img-2.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-3.jpg" class="box">
+          <img src="images/food-galler-img-3.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-4.jpg" class="box">
+          <img src="images/food-galler-img-4.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-5.jpg" class="box">
+          <img src="images/food-galler-img-5.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-6.jpg" class="box">
+          <img src="images/food-galler-img-6.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+      </div>
+    </section>
+    <!-- Gallery section Ends(la fin de la partie galerie) -->
+
+    <!-- Menu section starts(la section menu) -->
+
+    <section class="menu" id="menu">
+      <div class="heading">
+        <span>Notre menu</span>
+        <h3>Nos plats populaires</h3>
+      </div>
+
+      <div class="swiper menu-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <h3 class="title">Petit-déjeuner</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Le Croissant</h3>
+                  <p>
+                    L'incontournable du petit déjeuner ! Craquez pour nos
+                    viennoiseries pur beurre, cuites sous place pour encore plus
+                    de saveur.
+                  </p>
+                </div>
+                <div class="price">5.50$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Pain Au Chocolat</h3>
+                  <p>
+                    Une viennoiserie gourmande parmi les plus célèbres ! Craquez
+                    pour nos viennoiseries pur beurre, cuites sur place pour
+                    encore plus de saveur.
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Donut Saveur Chocolat</h3>
+                  <p>
+                    Découvrez le délicieux donut fourré saveur chocolat et
+                    noisettes.
+                  </p>
+                </div>
+                <div class="price">6.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Cookie Fourré Choconuts</h3>
+                  <p>
+                    Envie d'une pause gourmande ? Craquez pour le cookie fourré
+                    Choconuts, aux pépites de chocolat noir et aux morceaux de
+                    noisettes, fourré au chocolat et à la noisette.
+                  </p>
+                </div>
+                <div class="price">$49.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Cappuccino</h3>
+                  <p>
+                    Une véritable recette à tchadienne. Sous une mousse de lait
+                    chaud, toute la puissance et l'arôme d'un espresso mélangé à
+                    une touche de lait.
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Latte</h3>
+                  <p>
+                    Trois niveaux de plaisir à découvrir D'abord, il y a
+                    l'onctuosité de la mousse de lait, puis la force de
+                    l'expresso et enfin la douceur du lait chaud...
+                  </p>
+                </div>
+                <div class="price">8.99$</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">Déjeuner</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Le Croque KDo</h3>
+                  <p>
+                    Un croque monsieur tout rond, tout en simplicité : deux
+                    tranches d'emmental fondu, une tranche de tomate supérieur,
+                    dans un pain retourné et toasté. Il ne lui en faut pas plus
+                    pour être bon.
+                  </p>
+                </div>
+                <div class="price">8.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Donut Confetti</h3>
+                  <p>
+                    Découvrez le donut confetti avec son délicieux nappage
+                    parsemé de vermicelles en sucre !
+                  </p>
+                </div>
+                <div class="price">5.75$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le KFish</h3>
+                  <p>
+                    Le petit frère du Filet-O-Fish Caché au fond du Happy Meal,
+                    le KFish gagne à être connu : un pain lisse autour d'un
+                    poisson pané délicieusement croustillant et un peu de
+                    ketchup. Idéal pour s'initier au poisson !
+                  </p>
+                </div>
+                <div class="price">7.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le P'tit Fondu</h3>
+                  <p>
+                    Faîtes vous un P'tit Plaisir avec le P'tit Fondu et son
+                    onctueuse sauce à la raclette fondue ! Avec sa tranche
+                    d'emmental fondu, sa sauce à la raclette fondue, ses oignons
+                    frits et son steak haché 100% pur bœuf*, fondez pour le
+                    P'tit Fondu !
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">Dîner</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Le P'tit Fish & Chips</h3>
+                  <p>
+                    La nouvelle innovation de Koykissir Dans un tout nouveau
+                    pack pratique et moderne, le P'tit Fish & Chips se compose
+                    de 5 boulettes panées au colin, une petite frite et une
+                    sauce au choix. Découvrez la nouvelle sauce façon tartare.
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le KChicken</h3>
+                  <p>
+                    Laissez-vous tenter par l’incontournable et délicieux
+                    KChicken. Avec sa sauce KChicken légèrement citronnée, et
+                    son croustillant inimitable il saura vous régaler. Venez
+                    déguster ce délicieux burger, et découvrez pourquoi il
+                    rencontre tant de succès depuis 1980.
+                  </p>
+                </div>
+                <div class="price">10.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Cheeseburger</h3>
+                  <p>
+                    Un steak haché, une tranche de cheddar fondu, une rondelle
+                    de cornichon, des oignons, du ketchup et de la moutarde
+                    douce dans un pain classique : fondez pour son goût unique
+                    et emblématique.
+                  </p>
+                </div>
+                <div class="price">11.50$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Hamburger</h3>
+                  <p>
+                    Un steak haché, une rondelle de cornichon, des oignons, de
+                    la moutarde douce et du ketchup, retrouvez tout l'esprit de
+                    Koykissir dans ce classique au goût inimitable.
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">Les boissons</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Coca-Cola® Sans Sucres</h3>
+                  <p>
+                    Venez découvrir Coca-Cola® sans sucres chez Koykissir.
+                    Coca-Cola®sans sucres, c'est le goût unique de Coca-Cola
+                    sans sucres. Notre recette, mélange unique d'ingrédients,
+                    d'eau pétillante, avec une touche caramel, recrée le goût de
+                    Coca-Cola®, sans sucres. Appréciez-le avec plaisir !
+                  </p>
+                </div>
+                <div class="price">6.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Lipton Ice-tea®</h3>
+                  <p>
+                    Ce parfait équilibre des extraits de thé et du délicieux
+                    goût pêche en feront la boisson idéale pour accompagner
+                    votre menu et ravir vos papilles ! Comme toute la gamme
+                    Lipton Ice Tea, cette recette est sans colorant. Alors
+                    n'hésitez plus en venant chez Koykissir, et adoptez l'esprit
+                    Drink Positive* de Lipton Ice Tea à n'importe quel moment de
+                    la journée !
+                  </p>
+                </div>
+                <div class="price">7.50$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Lipton® Green Ice Tea</h3>
+                  <p>
+                    Ajoutez une touche de légèreté à votre repas avec Lipton
+                    Green Ice Tea* à base de thé vert et de subtils parfums !
+                    Cette boisson saura s'allier parfaitement à votre menu pour
+                    toujours plus de plaisir et de fraîcheur, en étant sans
+                    colorant et faible en calories. Découvrez sans plus attendre
+                    Lipton Green Ice Tea* saveur Agrume chez Koykissir !
+                  </p>
+                </div>
+                <div class="price">8.50$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Fanta® Goût Original Sans Sucres</h3>
+                  <p>
+                    Profitez d'un moment de plaisir en famille chez Koykissir
+                    pour découvrir ou redécouvrir le goût unique si fruité et
+                    délicieux de Fanta Orange ! Fanta Orange contient du jus
+                    d'orange et des arômes naturels.
+                  </p>
+                </div>
+                <div class="price">5.50$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Sprite® Goût Original Sans Sucres</h3>
+                  <p>
+                    Plus qu'une boisson, un frisson ! Vivez l'expérience Sprite
+                    chez Koykissir et redécouvrez le goût unique de la célèbre
+                    boisson rafraîchissante aux arômes naturels de citron et
+                    citron vert, maintenant sans sucre ! Sprite, born to refresh
+                    !*
+                  </p>
+                </div>
+                <div class="price">7.75$</div>
+              </div>
+
+              <div class="box">
+                <div class="info">
+                  <h3>Le Nectar De Pomme Bio</h3>
+                  <p>
+                    Pratique et ludique, le Nectar Bio convient aux plus petits
+                    comme aux plus grands ! Le Nectar Bio pomme, sans sucres
+                    ajoutés, est à base de jus de pomme issu de l'agriculture
+                    biologique.
+                  </p>
+                </div>
+                <div class="price">10.75$</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h3 class="title">dessert</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Le Sundae</h3>
+                  <p>
+                    Craquez pour un plaisir glacé avec des éclats de cacahuètes
+                    et choisissez votre nappage saveur caramel, chocolat,
+                    choconuts* ou coulis fraise, pour une pause gourmande ou un
+                    plaisir de fin de repas.
+                  </p>
+                </div>
+                <div class="price">6.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le Very Parfait</h3>
+                  <p>
+                    Succombez au Very Parfait : un irrésistible dessert glacé
+                    alliant la gourmandise d’un double nappage et l’onctuosité
+                    de la crème fouettée.
+                  </p>
+                </div>
+                <div class="price">9.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le P'tit Glacé Saveur Vanille</h3>
+                  <p>
+                    Un dessert glacé saveur vanille pour une touche de douceur
+                    dans ton Happy Meal ! Tube à presser contenant un dessert
+                    glacé à base de lait saveur vanille.
+                  </p>
+                </div>
+                <div class="price">10.99$</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Le P'tit Glacé À La Fraise</h3>
+                  <p>
+                    Un dessert glacé saveur fraise pour une touche de douceur
+                    dans ton Happy Meal ! Tube à presser contenant un dessert
+                    glacé fraise.
+                  </p>
+                </div>
+                <div class="price">7.99$</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--  Menu section Ends(fin de la section menu)-->
+
+    <!-- Order section start(la section commander) -->
+    <section id="order" class="order">
+      <div class="heading">
+        <span>Commander maintenant</span>
+        <h3>Livraison rapide à domicile</h3>
+      </div>
+      <form action="">
+        <div class="box-container">
+          <div class="box">
+            <div class="inputBox">
+              <span>Nom complet</span>
+              <input type="text" placeholder="saisissez votre nom" />
+            </div>
+            <div class="inputBox">
+              <span>Nom du produit</span>
+              <input
+                type="text"
+                placeholder="saisisser le nom du produit que vous voulez"
+              />
+            </div>
+            <div class="inputBox">
+              <span>Détails de la commande</span>
+              <input type="text" placeholder="les spécificités du produit" />
+            </div>
+            <div class="inputBox">
+              <span>votre adresse</span>
+              <textarea
+                name=""
+                placeholder="entrez votre adresse"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inputBox">
+              <span>Numéro</span>
+              <input type="number" placeholder="entrez votre Numéro" />
+            </div>
+            <div class="inputBox">
+              <span>Combien</span>
+              <input type="number" placeholder="Combien vous voulez" />
+            </div>
+            <div class="inputBox">
+              <span>Quand vous voulez</span>
+              <input type="datetime-local" />
+            </div>
+            <div class="inputBox">
+              <span>Notre adresse</span>
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.727725791695!2d7.233306515628779!3d43.69542357911982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd04782162ce7%3A0xe43d0d8ee67006ae!2s37%20Av.%20de%20la%20Bornala%2C%2006200%20Nice!5e0!3m2!1sfr!2sfr!4v1643797009710!5m2!1sfr!2sfr"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="commander" class="btn" />
+      </form>
+    </section>
+    <!-- Order section ends (fin de la partie commander)-->
+
+    <!-- blogs session starts(la section blogs) -->
+
+    <section class="blogs" id="blogs">
+      <div class="heading">
+        <span> Nos blogs </span>
+        <h3>Nos derniers articles</h3>
+      </div>
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-1.jpg" alt="" />
+              <span>burger</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">Burger</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-2.jpg" alt="" />
+              <span>sandwich</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">sandwich</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-3.jpg" alt="" />
+              <span>chicken</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">Poulet</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-4.jpg" alt="" />
+              <span>ice-cream</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">ice-cream</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-5.jpg" alt="" />
+              <span>pizza</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">Pizza</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-6.jpg" alt="" />
+              <span>coffee</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href=""><i class="fas fa-calendar"></i> 21 janvier,2022</a>
+                <a href=""><i class="fas fa-calendar"></i> Admin</a>
+              </div>
+              <a href="#blogs" class="title">café</a>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                obcaecati, commodi!
+              </p>
+              <a href="#blogs" class="btn">en savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- blogs session ends -->
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>Horaires d'ouverture</h3>
+          <p>07:00 À 22h:10</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>téléphone</h3>
+          <p>+33 7 55 30 10 73</p>
+          <p>+235 65 28 50 50</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>timanmahamatahmat@mailo.com</p>
+          <p>timanmahamatahmat@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address</h3>
+          <p>37 Avenue de la Bornala -06200, Nice</p>
+        </div>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/IGETchad?ref=py_c"
+          target="_blank"
+          class="fab fa-facebook-f"
+        ></a>
+        <a
+          href="https://twitter.com/GmahamatIdi"
+          target="_blank"
+          class="fab fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/cmt_tchad/"
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/mahamat-ahmat-timan-738362202/?originalSubdomain=fr"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+      </div>
+      <div class="credit">
+        Créé par <span>MAHAMAT AHMAT TIMAN</span> | Tous droits réservés !
+      </div>
+    </section>
+    <!-- footer section ends -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+
+    <script src="js/script.js"></script>
+    <script>
+      lightGallery(document.querySelector(".gallery .gallery-container"));
+    </script>
+  </body>
+</html>
